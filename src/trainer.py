@@ -119,7 +119,7 @@ def infer_databatch(model, data_sample, multigpus: bool = True):
     batch_sample_cont = data_sample["batch_cont"].reshape(-1, data_sample["batch_cont"].shape[-1]).to(model_acc.device, non_blocking = True) if "batch_cont" in data_sample.keys() else None
 
     all_embed, cell_embed, mask_gene = model(counts_norm = expr_sample)
-    expr_pred, expr_pred_meta = model_acc.predict_expr(cell_embed = cell_embed, batch_factors = batch_sample_cat, batch_ids = batch_sample_id)
+    expr_pred, expr_pred_meta = model_acc.predict_expr(cell_embed = cell_embed, batch_factors = batch_sample_cat)
 
     if model_acc.model_config.mlm_type == "meta":
         *_, expr_sample_meta = model_acc.gene_compression(gene_embed = model_acc.token_embed, expr = expr_sample, log_norm = True)
