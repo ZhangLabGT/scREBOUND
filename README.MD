@@ -31,4 +31,4 @@ The `config_file.yaml` stores the configuration of the inference, which include 
 * model_dir: the directory of the model state dict
 * data_dir: the directory of the evaluation dataset
 * output_dir: the output directory
-See `config_pancreas.ymal` for the example setting on pancreas evaluation dataset.
+See `config_pancreas.yaml` for the example setting on pancreas evaluation dataset.
