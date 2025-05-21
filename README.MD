@@ -13,8 +13,8 @@ flash-attn == 2.7.4.post1
 ```
 
 ## Directory
-* `./eval_adata/` stores the evaluation anndata, the download link of the data 
-* `./model_statedict/` stores the trained scREBOUND model, the download link of the model 
+* `./eval_adata/` stores the evaluation anndata, the download [link](https://drive.google.com/drive/folders/1lOq6EcYBVo0JZiR0x1RqNg6rmu60uZl0?usp=drive_link) 
+* `./model_statedict/` stores the trained scREBOUND model, the download [link](https://drive.google.com/drive/folders/1-Bshtwz3rvMuafFk8KclXDAWulEXlHlt?usp=drive_link) 
 * `./script_preprocess/` stores the preprocessing scripts for the training data
 * `./script_train/` stores the training scripts for scREBOUND
 * `./src/` stores the source code of scREBOUND
